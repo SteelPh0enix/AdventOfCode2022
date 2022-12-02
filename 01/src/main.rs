@@ -15,7 +15,7 @@ fn main() {
     elves.sort_unstable();
 
     let most_calories = elves.last().unwrap();
-    println!("Elf carrying the most Calories carries {most_calories} Calories");
+    println!("Elf carrying the most Calories has {most_calories} Calories");
 
     let top_3_total_calories: i64 = elves.iter().rev().take(3).sum();
     println!("Top 3 elves have {top_3_total_calories} Calories");
