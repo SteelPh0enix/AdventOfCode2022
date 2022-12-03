@@ -1,0 +1,10 @@
+[package]
+name = "aoc_2022_XX"
+version = "0.1.0"
+edition = "2021"
+authors = ["SteelPh0enix <steelphoenix2137@gmail.com>"]
+repository = "https://github.com/SteelPh0enix/AdventOfCode2022"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
