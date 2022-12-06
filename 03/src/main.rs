@@ -1,4 +1,4 @@
-use std::{collections::HashSet, fs, hash::Hash, str::FromStr};
+use std::{collections::HashSet, fs, str::FromStr};
 
 // Every item type is identified by a single letter (case-sensitive)
 // Single line contains list of items in one rucksack

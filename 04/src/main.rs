@@ -52,7 +52,6 @@ fn main() {
 #[cfg(test)]
 mod tests {
     use crate::{ranges_overlap, ranges_overlap_fully};
-    use std::ops::Range;
 
     #[test]
     fn ranges_overlap_fully_checks_overlap_correctly() {
