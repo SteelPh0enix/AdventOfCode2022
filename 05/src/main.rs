@@ -50,6 +50,7 @@ struct CratesTransfer {
     to: usize,
 }
 
+#[allow(dead_code)]
 fn move_crates(storage: &mut SupplyStorage, transfer: &CratesTransfer) {
     for _ in 0..transfer.amount {
         let crate_name = storage[transfer.from].pop().unwrap();
@@ -57,6 +58,7 @@ fn move_crates(storage: &mut SupplyStorage, transfer: &CratesTransfer) {
     }
 }
 
+#[allow(dead_code)]
 fn move_crates_all_at_once(storage: &mut SupplyStorage, transfer: &CratesTransfer) {
     let height = storage[transfer.from].len();
     let remaining_height = height - transfer.amount;
@@ -99,7 +101,9 @@ fn main() {
 
 #[cfg(test)]
 mod tests {
-    use crate::{move_crates, parse_supply_storage, CratesTransfer, SupplyStorage, move_crates_all_at_once};
+    use crate::{
+        move_crates, move_crates_all_at_once, parse_supply_storage, CratesTransfer, SupplyStorage,
+    };
 
     #[test]
     fn supply_is_parsed_correctly() {
